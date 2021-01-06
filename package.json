@@ -2,9 +2,10 @@
   "name": "js-design-pattern",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "tsc --build --clean",
+    "start": "tsc --build --clean && tsc && nodemon -L"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/thanhhunguaf/js-design-pattern/issues"
   },
-  "homepage": "https://github.com/thanhhunguaf/js-design-pattern#readme"
+  "homepage": "https://github.com/thanhhunguaf/js-design-pattern#readme",
+  "dependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
