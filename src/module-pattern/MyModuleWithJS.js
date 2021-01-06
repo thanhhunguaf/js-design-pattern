@@ -36,4 +36,36 @@ let myBook = (function () {
     };
 })();
 
+let numberOfBook = (function () {
+    let numberOfBook = 0;
+    let bookName = "MyBook";
+
+    function increase() {
+        numberOfBook++;
+    }
+
+    function getBookName() {
+        return bookName;
+    }
+
+    function setBookName(name) {
+        bookName = name;
+    }
+
+    function publicIncrease() {
+        increase();
+    }
+
+    function publicSetBookName(name) {
+        setBookName(name);
+    }
+
+    return {
+        increase: publicIncrease(),
+        getBookName: getBookName(),
+        setBookName: publicSetBookName(),
+        // setBookName: setBookName(), // why not?
+    };
+})();
+
 module.exports = myBook;
