@@ -9,7 +9,7 @@ function CharacterWithJS(name, age) {
 }
 
 // Type 2
-function CharacterWithJS();
+function CharacterWithJS() {}
 CharacterWithJS.name = "Kun";
 CharacterWithJS.age = 12;
 CharacterWithJS.toString = function () {
@@ -17,7 +17,7 @@ CharacterWithJS.toString = function () {
 }
 
 // Type 3 with prototypes
-function CharacterWithJS();
+function CharacterWithJS() {}
 CharacterWithJS.prototype.name = "Kun";
 CharacterWithJS.prototype.age = 12;
 CharacterWithJS.prototype.toString = function () {
@@ -33,6 +33,6 @@ CharacterWithJS.prototype.toString = function () {
 * - With prototype: When you create a new object using the prototype it will reuse the logic
 * and any change to the prototype chain will affect everyone else
 *
-* Explantion: https://tanzu.vmware.com/content/blog/javascript-constructors-prototypes-and-the-new-keyword
+* Explanation: https://tanzu.vmware.com/content/blog/javascript-constructors-prototypes-and-the-new-keyword
 * or https://stackoverflow.com/questions/5837795/javascript-prototypes-and-instance-creation
 * */
