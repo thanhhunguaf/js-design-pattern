@@ -69,3 +69,4 @@ let numberOfBook = (function () {
 })();
 
 module.exports = myBook;
+module.exports = numberOfBook;

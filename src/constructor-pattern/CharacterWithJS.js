@@ -27,7 +27,7 @@ CharacterWithJS.prototype.toString = function () {
 /*
 * And so, how to difference between constructor pattern and prototype pattern?
 *
-* - With constuctor: you will create a new instance of everything
+* - With constructor: you will create a new instance of everything
 * and importantly any change made to the instance it will only affect this not the others
 *
 * - With prototype: When you create a new object using the prototype it will reuse the logic
