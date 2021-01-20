@@ -1,3 +1,17 @@
+// ES6 type
+class CharacterWithJS {
+    properties() {
+        this.name = "";
+        this.age = 0;
+    }
+
+    constructor(name, age) {
+        this.properties();
+        this.name = name;
+        this.age = age;
+    }
+}
+
 // Type 1
 function CharacterWithJS(name, age) {
     this.name = name;
@@ -9,7 +23,9 @@ function CharacterWithJS(name, age) {
 }
 
 // Type 2
-function CharacterWithJS() {}
+function CharacterWithJS() {
+}
+
 CharacterWithJS.name = "Kun";
 CharacterWithJS.age = 12;
 CharacterWithJS.toString = function () {
@@ -17,7 +33,9 @@ CharacterWithJS.toString = function () {
 }
 
 // Type 3 with prototypes
-function CharacterWithJS() {}
+function CharacterWithJS() {
+}
+
 CharacterWithJS.prototype.name = "Kun";
 CharacterWithJS.prototype.age = 12;
 CharacterWithJS.prototype.toString = function () {
